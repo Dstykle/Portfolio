@@ -1,6 +1,6 @@
 *{
-        margin: 0px;
-        scroll-behavior: smooth;
+    margin: 0px;
+    scroll-behavior: smooth;
 }
 #navbar {
   position: sticky;
@@ -9,18 +9,50 @@
   background-color: #333;
 }
 
-ul{
+#navbar ul{
     list-style-type: none;
     padding: 0;
     background-color: lightblue;
-
 }
-ul li{
+#navbar ul li{
     display: inline;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid black;
+    border-color: #333;
 }
 section{
     background-color: pink;
     border-radius: 15px;
     padding: 30px;
-    margin: 15px;
+    margin-top: 15px;
+}
+.flex-container-column{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.flex-container-row{
+    display: flex;
+    overflow: auto;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+/*
+.inside-row{
+    display: flex;
+    justify-content:flex-start;
+}
+.inside-column{
+    justify-content: center;
+}
+    */
+.mixed{
+    display:contents;
+}
+.flex-container-row a{
+    margin: 3px;
 }

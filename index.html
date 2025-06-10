@@ -20,32 +20,50 @@
       Portfolio Website
     </h1>
   </header>
-    <main>
-      <section id="introduction">
+    <main class="flex-container-column">
+      <section id="introduction" class="flex-item">
       <h2>Welcome To My Portfolio!</h2>
-      
+      <section class="flex-container-row">
+        <section class="inside-flex">
+      <p>Welcome to <b>Pablo Gomez's</b> portfolio <br><br>This is where you will find information on projects and a little more about who I am.</p>
+          </section>
+      <section class="inside-flex">
+      <p>Lets Get Started!</p><br>
+      <ul style=" margin-right: 10px;">
+        <li><a href="#about" style="width: 70px; ;">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+      </section>  
+    </section>
       </section>
-      <section id="about">
+      <section id="about" class="flex-item">
       <h2>About Me</h2>
       <!--Self Professional Image-->
+      <section class="flex-container-row">
+        <p>text aboyt me</p>
       <figure>
       <img src="#">
       <figcaption>Professional Headshot</figcaption>
       </figure>
       </section>
-      <section id="portfolio">
-      <h2>Portfolio</h2>
       </section>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <section id="contact">
-      <h2>Contact Me</h2>
-  
+      <section id="portfolio" class="flex-item">
+      <h2>Portfolio</h2>
+      <section class="flex-container-row">
+        <p>project</p>
+        <p>project</p>
+        <p>project</p>
+        <p>project</p>
+      </section>
+      </section>
+      <section id="contact" class="flex-item">
+      <h2>Contact Me</h2><br><br>
       <form>
         <label for="#">Name:</label>
         <input id="#" type="text" placeholder="Pablo Gomez" required><br><br>
         <label for="#">Email:</label>
         <input id="#" type="email" placeholder="pgomez@r2hintern.org" required><br><br>
-        <label for="#">Message:</label><br>
+        <label for="#"><p style="height: 1.3em;;">Message:</p></label>
         <textarea cols="30" rows="10" placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo."></textarea><br><br>
         <input type="submit">
       </form>
