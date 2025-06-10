@@ -1,0 +1,26 @@
+*{
+        margin: 0px;
+        scroll-behavior: smooth;
+}
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    background-color: lightblue;
+
+}
+ul li{
+    display: inline;
+}
+section{
+    background-color: pink;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 15px;
+}

@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="default.css">
     <title>Portfolio Website || Pablo Gomez</title>
   </head>
   <body>
     <header>
-      <nav class="nav-bar">
+      <nav id="navbar">
         <ul>
-          <li>Introduction</li>
-          <li>About Me</li>
-          <li>Portfolio</li>
-          <li>Contact Me</li>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
     <h1>
@@ -20,7 +21,35 @@
     </h1>
   </header>
     <main>
-      <p>text tex text</p>
+      <section id="introduction">
+      <h2>Welcome To My Portfolio!</h2>
+      
+      </section>
+      <section id="about">
+      <h2>About Me</h2>
+      <!--Self Professional Image-->
+      <figure>
+      <img src="#">
+      <figcaption>Professional Headshot</figcaption>
+      </figure>
+      </section>
+      <section id="portfolio">
+      <h2>Portfolio</h2>
+      </section>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <section id="contact">
+      <h2>Contact Me</h2>
+  
+      <form>
+        <label for="#">Name:</label>
+        <input id="#" type="text" placeholder="Pablo Gomez" required><br><br>
+        <label for="#">Email:</label>
+        <input id="#" type="email" placeholder="pgomez@r2hintern.org" required><br><br>
+        <label for="#">Message:</label><br>
+        <textarea cols="30" rows="10" placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo."></textarea><br><br>
+        <input type="submit">
+      </form>
+      </section>
     </main>
     <footer>
     
