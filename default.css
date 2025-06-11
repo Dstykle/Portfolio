@@ -1,5 +1,5 @@
 *{
-    margin: 1px;
+    margin: 0px;
     scroll-behavior: smooth;
     color:rgb(25, 88, 104);
     
@@ -7,14 +7,20 @@
 h1{
     text-align: center;
 }
+h2{
+    text-decoration: underline;
+}
+p{
+    overflow-wrap: break-word;
+word-wrap: break-word; /* for older browser support */
+white-space: normal;
+font-size: 2.2vw;
+}
 #navbar {
   position: sticky;
   top: 0;
   left: 0;
   width: 100%; 
-  z-index: 1000; 
-  text-align: center;
-
 }
 #navbar ul{
     list-style-type: none;
@@ -23,7 +29,7 @@ h1{
 }
 #navbar ul li{
     display: inline;
-    font-size: large;
+    font-size: 2.2vw;
     border: 0px solid rgb(199, 188, 188);
     margin: 2%;
     border-radius: 10px;
@@ -50,9 +56,11 @@ li{
     display: inline-block;
     border: 0px solid rgb(199, 188, 188);
     border-radius: 30px;
+    font-size: 2.2vw;
     background-color: rgb(199, 188, 188);
 }
 section{
+    margin: 10px;
     background-color: rgb(176, 216, 230);
     border-radius: 15px;
     padding: 30px;
@@ -70,23 +78,33 @@ section{
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
-/*
-.inside-row{
-    display: flex;
-    justify-content:flex-start;
-}
-.inside-column{
-    justify-content: center;
-}
-    */
-.mixed{
-    display:contents;
-}
 .flex-container-row a{
     margin: 3px;
 }
+footer{
+    background-color: rgb(199, 188, 188);
+   
+    padding: 3%;
+}
+figure{
+    padding-bottom: 100px;
+}
+textarea, input {
+  width: 25vw;        /* Adjust width relative to the viewport */
+  padding: .4vw;       /* Optional: scales padding too */
+  font-size: 1.4vw;   /* Optional: scales text size */
+  box-sizing: border-box;
+}
+textarea{
+    
+}
+
 @media  (max-width:400px){
-    a{
-        font-size: 16px;
+    p,a{
+        font-size: 3.5vw;
+    }
+    img{
+        min-width: 150px;
+        float: none;
     }
 }

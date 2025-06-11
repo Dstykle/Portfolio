@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="default.css">
   <title>Portfolio Website || Pablo Gomez</title>
 </head>
-
 <body>
-  <nav id="navbar">
+    <header>
+    <h1>
+      Portfolio Website
+    </h1>
+  </header>
+  <main class="flex-container-column">
+    <nav id="navbar">
       <ul>
         <li><a href="#introduction">Introduction</a></li>
         <li><a href="#about">About Me</a></li>
@@ -17,20 +21,14 @@
         <li><a href="#contact">Contact Me</a></li>
       </ul>
     </nav>
-  <header>
-    <h1>
-      Portfolio Website
-    </h1>
-  </header>
-  <main class="flex-container-column">
+    <!--Welcome section for the page-->
     <section id="introduction" class="flex-item">
       <h2>Welcome To My Portfolio!</h2>
       <section class="flex-container-row">
-        <section class="inside-flex">
+        <section class="flex-item">
           <p>Welcome to <b>Pablo Gomez's</b> portfolio <br><br>This is where you will find information on projects and a
             little more about who I am.</p>
         </section>
-          
           <nav>
             <p style="margin: 1rem">Check Out My:</p>
             <ul style="margin-right: 2rem;">
@@ -38,20 +36,25 @@
               <li><a href="#portfolio">Portfolio</a></li>
             </ul>
           </nav>
-        
       </section>
     </section>
+    <!--About section explaining who I am-->
     <section id="about" class="flex-item">
       <h2>About Me</h2>
-      <!--Self Professional Image-->
       <section class="flex-container-row">
-        <article><p>text </p></article>
+        <!--Image and description of myself-->
+        <section>
         <figure>
-          <img src="images/IMG_1820.jpg" width="15%">
-          <figcaption>Professional Headshot</figcaption>
+        <img src="images/IMG_1820.jpg" width=35% style="float:right">
         </figure>
+          <p>
+          My name is Pablo Gomez. I am a student at the University of North Carolina at Charlotte majoring in Computer Science with a concentration in Software Engineering.
+            I have two siblings who are both younger. I love to play volleyball and video games on my free time to pass the time.
+        </p>
+        </section>
       </section>
     </section>
+    <!--P]Portfolio section for past projects and accomplishments that I will share-->
     <section id="portfolio" class="flex-item">
       <h2>Portfolio</h2>
       <section class="flex-container-row">
@@ -61,25 +64,26 @@
         <p>project</p>
       </section>
     </section>
+    <!--Contact form for user interactivity-->
     <section id="contact" class="flex-item">
       <h2>Contact Me</h2><br><br>
       <form>
-        <label for="#">Name:</label>
-        <input id="#" type="text" placeholder="Pablo Gomez" required>
-        <label for="#">Email:</label>
-        <input id="#" type="email" placeholder="pgomez@r2hintern.org" required>
+        <p><label for="#">Name:</label>
+        <input id="#" type="text" placeholder="Pablo Gomez" required></p>
+        <p><label for="#">Email:</label>
+        <input id="#" type="email" placeholder="pgomez@r2hintern.org" required></p>
         <label for="#">
           <p style="height: 1.3em;">Message:</p>
         </label>
-        <textarea cols="30" rows="10"
-          placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo."></textarea><br><br>
+        <div><textarea rows="7" placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo."></textarea>
+        </div>
         <input type="submit">
       </form>
     </section>
   </main>
   <footer>
-
+    <p>dowqediqnwodioqd</p>
+    <p>dnifwediqwndoqw</p>
   </footer>
 </body>
-
 </html>
