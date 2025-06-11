@@ -95,11 +95,9 @@ textarea, input {
   font-family: monospace;
   font-size: 1.8vw;
   box-sizing: border-box;
+    letter-spacing: normal;
+}
 
-}
-textarea{
-    
-}
 
 @media  (max-width:440px){
     p,a{
