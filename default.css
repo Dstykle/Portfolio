@@ -93,9 +93,8 @@ textarea, input {
   width: 25vw;
   padding: .8vw;
   font-family: monospace;
-  font-size: 1.8vw;
-  box-sizing: border-box;
-    letter-spacing: normal;
+  font-size: 16px;
+
 }
 
 
@@ -106,5 +105,8 @@ textarea, input {
     img{
         min-width: 43vw;
         float: none;
+    }
+    textarea, input{
+        font-size: 16px;
     }
 }
