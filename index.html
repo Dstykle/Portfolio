@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="default.css">
-    <title>Portfolio Website || Pablo Gomez</title>
-  </head>
-  <body>
-    <header>
-      <nav id="navbar">
-        <ul>
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
-      </nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="default.css">
+  <title>Portfolio Website || Pablo Gomez</title>
+</head>
+
+<body>
+  <nav id="navbar">
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  <header>
     <h1>
       Portfolio Website
     </h1>
   </header>
-    <main class="flex-container-column">
-      <section id="introduction" class="flex-item">
+  <main class="flex-container-column">
+    <section id="introduction" class="flex-item">
       <h2>Welcome To My Portfolio!</h2>
       <section class="flex-container-row">
         <section class="inside-flex">
-      <p>Welcome to <b>Pablo Gomez's</b> portfolio <br><br>This is where you will find information on projects and a little more about who I am.</p>
-          </section>
-      <section class="inside-flex">
-      <p>Lets Get Started!</p><br>
-      <ul style=" margin-right: 10px;">
-        <li><a href="#about" style="width: 70px; ;">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-      </ul>
-      </section>  
-    </section>
+          <p>Welcome to <b>Pablo Gomez's</b> portfolio <br><br>This is where you will find information on projects and a
+            little more about who I am.</p>
+        </section>
+          
+          <nav>
+            <p style="margin: 1rem">Check Out My:</p>
+            <ul style="margin-right: 2rem;">
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+          </nav>
+        
       </section>
-      <section id="about" class="flex-item">
+    </section>
+    <section id="about" class="flex-item">
       <h2>About Me</h2>
       <!--Self Professional Image-->
       <section class="flex-container-row">
-        <p>text aboyt me</p>
-      <figure>
-      <img src="#">
-      <figcaption>Professional Headshot</figcaption>
-      </figure>
+        <article><p>text </p></article>
+        <figure>
+          <img src="images/IMG_1820.jpg" width="15%">
+          <figcaption>Professional Headshot</figcaption>
+        </figure>
       </section>
-      </section>
-      <section id="portfolio" class="flex-item">
+    </section>
+    <section id="portfolio" class="flex-item">
       <h2>Portfolio</h2>
       <section class="flex-container-row">
         <p>project</p>
@@ -55,23 +60,26 @@
         <p>project</p>
         <p>project</p>
       </section>
-      </section>
-      <section id="contact" class="flex-item">
+    </section>
+    <section id="contact" class="flex-item">
       <h2>Contact Me</h2><br><br>
       <form>
         <label for="#">Name:</label>
-        <input id="#" type="text" placeholder="Pablo Gomez" required><br><br>
+        <input id="#" type="text" placeholder="Pablo Gomez" required>
         <label for="#">Email:</label>
-        <input id="#" type="email" placeholder="pgomez@r2hintern.org" required><br><br>
-        <label for="#"><p style="height: 1.3em;;">Message:</p></label>
-        <textarea cols="30" rows="10" placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo."></textarea><br><br>
+        <input id="#" type="email" placeholder="pgomez@r2hintern.org" required>
+        <label for="#">
+          <p style="height: 1.3em;">Message:</p>
+        </label>
+        <textarea cols="30" rows="10"
+          placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo."></textarea><br><br>
         <input type="submit">
       </form>
-      </section>
-    </main>
-    <footer>
-    
+    </section>
+  </main>
+  <footer>
+
   </footer>
-  </body>
-  
+</body>
+
 </html>

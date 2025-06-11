@@ -1,30 +1,59 @@
 *{
-    margin: 0px;
+    margin: 1px;
     scroll-behavior: smooth;
+    color:rgb(25, 88, 104);
+    
+}
+h1{
+    text-align: center;
 }
 #navbar {
   position: sticky;
   top: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+  left: 0;
+  width: 100%; 
+  z-index: 1000; 
+  text-align: center;
 
+}
 #navbar ul{
     list-style-type: none;
     padding: 0;
-    background-color: lightblue;
+    background-color: rgb(199, 188, 188);
 }
 #navbar ul li{
     display: inline;
+    font-size: large;
+    border: 0px solid rgb(199, 188, 188);
+    margin: 2%;
+    border-radius: 10px;
+    background-color: rgb(199, 188, 188);
+}
+@keyframes navhover {
+  0%   {background-color: rgb(199, 188, 188);border: 0px solid rgb(199, 188, 188);}
+  25%  {background-color: rgb(178, 185, 180);border: 0px solid rgb(178, 185, 180);}
+  50%  {background-color: rgb(159, 163, 160);border: 0px solid rgb(159, 163, 160);}
+  100% {background-color: rgb(142, 146, 144);border: 0px solid rgb(142, 146, 144);}
+}
+li :hover{
+    background-color: rgb(142, 146, 144);
+    animation-name: navhover;
+    animation-duration: 0.5s;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(25, 88, 104);
 }
 li{
     list-style-type: none;
     display: inline-block;
-    border: 1px solid black;
-    border-color: #333;
+    border: 0px solid rgb(199, 188, 188);
+    border-radius: 30px;
+    background-color: rgb(199, 188, 188);
 }
 section{
-    background-color: pink;
+    background-color: rgb(176, 216, 230);
     border-radius: 15px;
     padding: 30px;
     margin-top: 15px;
@@ -37,7 +66,7 @@ section{
 }
 .flex-container-row{
     display: flex;
-    overflow: auto;
+    overflow: hidden;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
@@ -55,4 +84,9 @@ section{
 }
 .flex-container-row a{
     margin: 3px;
+}
+@media  (max-width:400px){
+    a{
+        font-size: 16px;
+    }
 }
