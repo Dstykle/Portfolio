@@ -11,11 +11,12 @@ h1{
 h2{
     text-decoration: underline;
 }
+
 p{
     overflow-wrap: break-word;
     word-wrap: break-word;
     white-space: normal;
-    font-size: 2.2vw;
+    font-size: 2.8vh;
 }
 li :hover{
     background-color: rgb(142, 146, 144);
@@ -32,14 +33,14 @@ li{
     display: inline-block;
     border: 0px solid rgb(199, 188, 188);
     border-radius: 30px;
-    font-size: 2.2vw;
+    font-size: 2.2vh;
     background-color: rgb(199, 188, 188);
 }
 section{
     margin: 10px;
     background-color: rgb(176, 216, 230);
     border-radius: 15px;
-    padding: 30px;
+    padding: 30px 5px 5px;
     margin-top: 15px;
 }
 section a{
@@ -51,13 +52,13 @@ footer p a{
 footer{
     background-color: rgb(199, 188, 188);
     text-align: center;
-    padding: 3%;
+    padding: 1%;
 }
 textarea, input {
     width: 25vw;
-    padding: .8vw;
+    padding: .8vh;
     font-family: monospace;
-    font-size: 1.6vw;
+    font-size: 1.6vh;
 }
 /*Specific id's*/
 #navbar {
@@ -98,7 +99,7 @@ textarea, input {
 .project-container{
     background-color: rgb(137, 209, 173);
     margin: 10px;
-    padding: 5px 30px 5px 30px;
+    padding: 30px;
     word-break: keep-all;
     overflow-wrap: break-word;
     max-width: 50vw;
@@ -106,13 +107,16 @@ textarea, input {
 .project-name{
     border-bottom: 1px solid black;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 .project-pic{
     max-width: 50vw;
 }
 .aboutme{
-    margin-left: -2px;
+    padding: 0;
+    padding: 5px 30px 5px 30px;
 }
+
 /*@rules*/
 @keyframes navhover {
     0%   {background-color: rgb(199, 188, 188);border: 0px solid rgb(199, 188, 188);}
@@ -121,11 +125,37 @@ textarea, input {
     100% {background-color: rgb(142, 146, 144);border: 0px solid rgb(142, 146, 144);}
 }
 @media  (max-width:440px){
-    p, nav a,li{
+    p,nav,li{
         font-size: 3.0vw;
+    }
+    p{
+        font-size: 4.0vw;
+    }
+    a{
+
     }
     img{
         min-width: 43vw;
         float: none;
     }
+    .project-container{
+        margin-left: -2vw;
+    }
+    .aboutme{
+    margin-left: -1px;
 }
+}
+@media (min-width:1500px){
+    .aboutme img{
+    max-width:18vw;
+    }
+}
+@media (min-height:750px){
+    h2{
+        font-size: 3.8vh;
+    }
+    h1{
+        font-size: 4.2vw;
+    }
+}
+
