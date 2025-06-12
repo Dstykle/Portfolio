@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="default.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Portfolio Website || Pablo Gomez</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
     <section id="introduction" class="flex-item">
       <h2>Welcome To My Portfolio!</h2>
       <section class="flex-container-row">
-        <section class="flex-item">
+        <section class="flex-item" style="padding-bottom: 0;padding-top: 0;">
           <p>Welcome to <b>Pablo Gomez's</b> portfolio <br><br>This is where you will find information on projects and a
             little more about who I am.</p>
         </section>
@@ -41,11 +42,11 @@
     <!--About section explaining who I am-->
     <section id="about" class="flex-item">
       <h2>About Me</h2>
-      <section class="flex-container-row">
+      <section class="flex-container-row aboutme">
         <!--Image and description of myself-->
-        <section>
+        <section class="aboutme">
         <figure>
-        <img src="images/IMG_1820.jpg" width=35% style="float:right">
+        <img src="images/IMG_1820.jpg" width=35%>
         </figure>
           <p>
           My name is Pablo Gomez. I am a student at the University of North Carolina at Charlotte majoring in Computer Science with a concentration in Software Engineering.
@@ -59,10 +60,62 @@
     <section id="portfolio" class="flex-item">
       <h2>Portfolio</h2>
       <section class="flex-container-row">
-        <p>project</p>
-        <p>project</p>
-        <p>project</p>
-        <p>project</p>
+
+        <div class="project-container">
+          <h3 class="project-name">
+            Basic Calculator (Python)
+          </h3>
+        <figure>
+          <img class="project-pic" src="images/Screenshot 2025-06-12 at 12.41.32 PM.png" alt="Snippet of python code of my basic calculator mini project" width="400vh" style="max-height:25vh;">
+          <figcaption>
+            This basic calculator project was one of my very first coding mini project that I learned through
+            my own findings. This is an important project to me because it marks when I was able to complete
+            something on that I had very little understanding about while still enjoying the process of learning about it.
+            This is my first exposure to something I am very passionate about and continued practicing.
+          </figcaption>
+        </figure>
+        </div>
+        <div class="project-container">
+          <h3 class="project-name">
+            Contact Book (Python)
+          </h3>
+        <figure>
+          <a href="https://github.com/Dstykle/ContactBook" target="_blank"><img class="project-pic" src="images/Screenshot 2025-06-12 at 12.32.40 PM.png" alt="Snippet of code for my contact book project" width="400vh"></a>
+          <figcaption>
+            My<a href="https://github.com/Dstykle/ContactBook" target="_blank">Contact Book</a>is a project I am very proud of because a lot of studying and research in school and on my own went into this
+            which is what helped me better develop my researching skills of being able to do most of this on my own comfortably.
+            This was a submission for one of my AP classes in high school and has given me a good idea on how I can use my resources
+            to create something great. The project itself is a simple contact book where it will collect information and save it on a seperate txt document.
+          </figcaption>          
+        </figure>
+        </div>
+        <div class="project-container">
+          <h3 class="project-name">
+            Company/Service Project (C#)
+          </h3>
+        <figure>
+          <a href="https://github.com/Dstykle/CompanyServiceProject" target="_blank"><img class="project-pic" src="images/Screenshot 2025-06-12 at 12.36.34 PM.png" alt="Snippet of C# code of company/service project" width="400vh"></a>
+          <figcaption>
+            This<a href="https://github.com/Dstykle/CompanyServiceProject" target="_blank">Company/Service program</a>was (to me) another one of my "larger" scale high school projects that I was able to develop purely through school and outside research.
+            This project has two companies (Burger King and Popeyes) and depending which on you choose, you will make an order and this will essentially
+            create a receipt for the items you have chosen. This project reinforced my basic knowledge and helped me expand as a student on how far I'm
+            willing to go when it comes to my coding projects.
+          </figcaption>
+        </figure>
+        </div>
+        <div class="project-container">
+          <h3 class="project-name">
+            Web Development Project (HTML, CSS, JS)
+          </h3>
+        <figure>
+          <a href="https://github.com/Dstykle/Dstykle.github.io" target="_blank"><img class="project-pic" src="images/Screenshot 2025-06-11 at 2.15.20 PM.png" alt="Front view of my web development website" width="400vh"></a>
+          <figcaption>
+            The<a href="https://github.com/Dstykle/Dstykle.github.io" target="_blank">Web Development Project</a>is my first project I created in college with the help of peers and my professor who was great help in setting up
+            new features that I have never used before and links to resources that I was unaware of at the time. This project helped me realize there are
+            many things out there available to help 
+          </figcaption>
+        </figure>
+      </div>
       </section>
     </section>
     <!--Contact form for user interactivity-->
@@ -70,22 +123,30 @@
     <section id="contact" class="flex-item">
       <h2>Contact Me</h2><br><br>
       <form>
-        <p><label for="#">Name:</label>
-        <input id="#" type="text" placeholder="Pablo Gomez" required></p>
-        <p><label for="#">Email:</label>
-        <input id="#" type="email" placeholder="pgomez@r2hintern.org" required></p>
-        <label for="#">
+        <p><label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Pablo Gomez" required></p>
+        <p><label for="email">Email:</label>
+        <input id="email" type="email" placeholder="pgomez@r2hintern.org" required></p>
+        <label for="message">
           <p style="height: 1.3em;">Message:</p>
         </label>
-        <div><textarea rows="7" placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo."></textarea>
+        <div>
+          <textarea id="message" rows="7" placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo."></textarea>
         </div>
         <input type="submit">
       </form>
     </section>
   </main>
   <footer>
-    <p>dowqediqnwodioqd</p>
-    <p>dnifwediqwndoqw</p>
+    <p>designed by <a href="#">Gomez Designs</a>, <a href="https://www.freecodecamp.org/certification/PabloGomez/responsive-web-design" target="_blank">Certified in Responsive Web Design</a> ©2025</p>
+    <nav id="socials">
+    <ul>
+      <li><a href="#" class="fa fa-facebook"></a> |</li>
+      <li><a href="#" class="fa fa-instagram"></a> |</li>
+      <li><a href="https://www.linkedin.com/in/pablogomeztech/" class="fa fa-linkedin"></a> |</li>
+      <li><a href="https://github.com/Dstykle" class="fa fa-github"></a> </li>
+    </ul>
+    </nav>
   </footer>
 </body>
 </html>

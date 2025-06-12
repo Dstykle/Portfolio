@@ -4,6 +4,7 @@
     color:rgb(25, 88, 104);
     
 }
+/*Specific elements*/
 h1{
     text-align: center;
 }
@@ -12,34 +13,9 @@ h2{
 }
 p{
     overflow-wrap: break-word;
-word-wrap: break-word; /* for older browser support */
-white-space: normal;
-font-size: 2.2vw;
-}
-#navbar {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%; 
-}
-#navbar ul{
-    list-style-type: none;
-    padding: 0;
-    background-color: rgb(199, 188, 188);
-}
-#navbar ul li{
-    display: inline;
+    word-wrap: break-word;
+    white-space: normal;
     font-size: 2.2vw;
-    border: 0px solid rgb(199, 188, 188);
-    margin: 2%;
-    border-radius: 10px;
-    background-color: rgb(199, 188, 188);
-}
-@keyframes navhover {
-  0%   {background-color: rgb(199, 188, 188);border: 0px solid rgb(199, 188, 188);}
-  25%  {background-color: rgb(178, 185, 180);border: 0px solid rgb(178, 185, 180);}
-  50%  {background-color: rgb(159, 163, 160);border: 0px solid rgb(159, 163, 160);}
-  100% {background-color: rgb(142, 146, 144);border: 0px solid rgb(142, 146, 144);}
 }
 li :hover{
     background-color: rgb(142, 146, 144);
@@ -66,6 +42,44 @@ section{
     padding: 30px;
     margin-top: 15px;
 }
+section a{
+    text-decoration: underline;
+}
+footer p a{
+    text-decoration: underline;
+}
+footer{
+    background-color: rgb(199, 188, 188);
+    text-align: center;
+    padding: 3%;
+}
+textarea, input {
+    width: 25vw;
+    padding: .8vw;
+    font-family: monospace;
+    font-size: 1.6vw;
+}
+/*Specific id's*/
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+#navbar ul{
+    list-style-type: none;
+    padding: 0;
+    background-color: rgb(199, 188, 188);
+}
+#navbar ul li{
+    display: inline;
+    font-size: 2.2vh;
+    border: 0px solid rgb(199, 188, 188);
+    margin: 2%;
+    border-radius: 10px;
+    background-color: rgb(199, 188, 188);
+}
+/*Specific classes*/
 .flex-container-column{
     text-align: center;
     display: flex;
@@ -81,37 +95,37 @@ section{
 .flex-container-row a{
     margin: 3px;
 }
-footer{
-    background-color: rgb(199, 188, 188);
-   
-    padding: 3%;
+.project-container{
+    background-color: rgb(137, 209, 173);
+    margin: 10px;
+    padding: 5px 30px 5px 30px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    max-width: 50vw;
 }
-figure{
-    
+.project-name{
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
 }
-textarea, input {
-  width: 25vw;
-  padding: .8vw;
-  font-family: monospace;
-  font-size: 16px;
-
+.project-pic{
+    max-width: 50vw;
 }
-
-
+.aboutme{
+    margin-left: -2px;
+}
+/*@rules*/
+@keyframes navhover {
+    0%   {background-color: rgb(199, 188, 188);border: 0px solid rgb(199, 188, 188);}
+    25%  {background-color: rgb(178, 185, 180);border: 0px solid rgb(178, 185, 180);}
+    50%  {background-color: rgb(159, 163, 160);border: 0px solid rgb(159, 163, 160);}
+    100% {background-color: rgb(142, 146, 144);border: 0px solid rgb(142, 146, 144);}
+}
 @media  (max-width:440px){
-    p,a{
-        font-size: 3.5vw;
+    p, nav a,li{
+        font-size: 3.0vw;
     }
     img{
         min-width: 43vw;
         float: none;
     }
-    textarea, input{
-        font-size: 16px;
-    }
-    @supports (-webkit-touch-callout: none) {
-        *{
-            font-size: 16px;
-        }
-}
 }
