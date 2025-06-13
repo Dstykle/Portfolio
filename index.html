@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Portfolio Website || Pablo Gomez</title>
 </head>
+
 <body>
-    <header>
+  <header id="top">
     <h1>
       Portfolio Website
     </h1>
   </header>
   <main class="flex-container-column">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#top" class="active">Home</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact Me</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
     <nav id="navbar">
       <ul>
-        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#top">Introduction</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact Me</a></li>
@@ -27,16 +44,17 @@
       <h2>Welcome To My Portfolio!</h2>
       <section class="flex-container-column">
         <section class="flex-item" style="padding-bottom: 10vh;padding-top: 0;">
-          <p>Welcome to <b>Pablo Gomez's</b> portfolio <br><br>This is where you will find information on projects and a
+          <p>Welcome to <b>Pablo Gomez's</b> portfolio. <br><br>This is where you will find information on projects and
+            a
             little more about who I am.</p>
         </section>
-          <nav>
-            <p style="margin: 1rem">Check Out My:</p>
-            <ul style="margin-right: 2rem;">
-              <li style="padding: 4px"><a href="#about">About Me</a></li>
-              <li style="padding: 5px"><a href="#portfolio">Portfolio</a></li>
-            </ul>
-          </nav>
+        <nav>
+          <p style="margin: 1rem">Check Out My:</p>
+          <ul style="margin-right: 2rem;">
+            <li style="padding: 4px;"><a href="#about" style="text-decoration: none;">About Me</a></li>
+            <li style="padding: 5px"><a href="#portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
       </section>
     </section>
     <!--About section explaining who I am-->
@@ -45,14 +63,19 @@
       <section class="flex-container-row aboutme">
         <!--Image and description of myself-->
         <section class="aboutme">
-        <figure>
-        <img src="images/IMG_1820.jpg" width=35%>
-        </figure>
+          <figure>
+            <img src="images/IMG_1820.jpg" width=35%>
+          </figure>
           <p>
-          My name is Pablo Gomez. I am a student at the University of North Carolina at Charlotte majoring in Computer Science with a concentration in Software Engineering.
-            I have two siblings who are both younger. I love to play volleyball and video games on my free time to pass the time.
-        </p>
-        <p style="margin-top: 4vw;">Ways to reach me:<br><span style="text-align: left;">Email: pablogoomez88050@gmail.com<br>Phone: xxx-xxx-xxxx</span></p>
+            My name is Pablo Gomez. I am a student at the University of North Carolina at Charlotte majoring in Computer
+            Science with a concentration in Software
+            Engineering. I am the oldest of my two other siblings. During my free time at home I enjoy playing video
+            games with friends. My favorite sports are
+            volleyball and football. I have a great passion for Software Engineering as I have been doing my research
+            and studies based around software development and testing.
+          </p>
+          <p style="margin-top: 4vw;">Ways to reach me:<br><span style="text-align: left;">Email:
+              pablogomez88050@gmail.com<br>Phone: xxx-xxx-xxxx</span></p>
         </section>
       </section>
     </section>
@@ -60,93 +83,119 @@
     <section id="portfolio" class="flex-item">
       <h2>Portfolio</h2>
       <section class="flex-container-row">
-
         <div class="project-container">
           <h3 class="project-name">
             Basic Calculator (Python)
           </h3>
-        <figure>
-          <img class="project-pic" src="images/Screenshot 2025-06-12 at 12.41.32 PM.png" alt="Snippet of python code of my basic calculator mini project" width="400vh">
-          <figcaption>
-            This basic calculator project was one of my very first coding mini project that I learned through
-            my own findings. This is an important project to me because it marks when I was able to complete
-            something on that I had very little understanding about while still enjoying the process of learning about it.
-            This is my first exposure to something I am very passionate about and continued practicing.
-          </figcaption>
-        </figure>
+          <figure>
+            <img class="project-pic" src="images/Screenshot 2025-06-12 at 12.41.32 PM.png"
+              alt="Snippet of python code of my basic calculator mini project" width="400vh">
+            <figcaption>
+              This basic calculator project was one of my very first coding mini project that I learned through
+              my own findings. This is an important project to me because it marks when I was able to complete
+              something on that I had very little understanding about while still enjoying the process of learning about
+              it.
+              This is my first exposure to something I am very passionate about and continued practicing.
+            </figcaption>
+          </figure>
         </div>
         <div class="project-container">
           <h3 class="project-name">
             Contact Book (Python)
           </h3>
-        <figure>
-          <a href="https://github.com/Dstykle/ContactBook" target="_blank"><img class="project-pic" src="images/Screenshot 2025-06-12 at 12.32.40 PM.png" alt="Snippet of code for my contact book project" width="400vh"></a>
-          <figcaption>
-            My<a href="https://github.com/Dstykle/ContactBook" target="_blank">Contact Book</a>is a project I am very proud of because a lot of studying and research in school and on my own went into this
-            which is what helped me better develop my researching skills of being able to do most of this on my own comfortably.
-            This was a submission for one of my AP classes in high school and has given me a good idea on how I can use my resources
-            to create something great. The project itself is a simple contact book where it will collect information and save it on a seperate txt document.
-          </figcaption>          
-        </figure>
+          <figure>
+            <a href="https://github.com/Dstykle/ContactBook" target="_blank"><img class="project-pic"
+                src="images/Screenshot 2025-06-12 at 12.32.40 PM.png" alt="Snippet of code for my contact book project"
+                width="400vh"></a>
+            <figcaption>
+              My<a href="https://github.com/Dstykle/ContactBook" target="_blank">Contact Book</a>is a project I am very
+              proud of because
+              a lot of studying and research in school and on my own went into this
+              which is what helped me better develop my researching skills of being able to do most of this on my own
+              comfortably.
+              This was a submission for one of my AP classes in high school and has given me a good idea on how I can
+              use my resources
+              to create something great. The project itself is a simple contact book where it will collect information
+              and save it on a seperate txt document.
+            </figcaption>
+          </figure>
         </div>
         <div class="project-container">
           <h3 class="project-name">
             Company/Service Project (C#)
           </h3>
-        <figure>
-          <a href="https://github.com/Dstykle/CompanyServiceProject" target="_blank"><img class="project-pic" src="images/Screenshot 2025-06-12 at 12.36.34 PM.png" alt="Snippet of C# code of company/service project" width="400vh"></a>
-          <figcaption>
-            This<a href="https://github.com/Dstykle/CompanyServiceProject" target="_blank">Company/Service program</a>was (to me) another one of my "larger" scale high school projects that I was able to develop purely through school and outside research.
-            This project has two companies (Burger King and Popeyes) and depending which on you choose, you will make an order and this will essentially
-            create a receipt for the items you have chosen. This project reinforced my basic knowledge and helped me expand as a student on how far I'm
-            willing to go when it comes to my coding projects.
-          </figcaption>
-        </figure>
+          <figure>
+            <a href="https://github.com/Dstykle/CompanyServiceProject" target="_blank"><img class="project-pic"
+                src="images/Screenshot 2025-06-12 at 12.36.34 PM.png"
+                alt="Snippet of C# code of company/service project" width="400vh"></a>
+            <figcaption>
+              This<a href="https://github.com/Dstykle/CompanyServiceProject" target="_blank">Company/Service
+                program</a>was (to me) another one of my
+              "larger" scale high school projects that I was able to develop purely through school and outside research.
+              This project has two companies (Burger King and Popeyes) and depending which on you choose, you will make
+              an order and this will essentially
+              create a receipt for the items you have chosen. This project reinforced my basic knowledge and helped me
+              expand as a student on how far I'm
+              willing to go when it comes to my coding projects.
+            </figcaption>
+          </figure>
         </div>
         <div class="project-container">
           <h3 class="project-name">
             Web Development Project (HTML, CSS, JS)
           </h3>
-        <figure>
-          <a href="https://github.com/Dstykle/Dstykle.github.io" target="_blank"><img class="project-pic" src="images/Screenshot 2025-06-11 at 2.15.20 PM.png" alt="Front view of my web development website" width="400vh"></a>
-          <figcaption>
-            The<a href="https://github.com/Dstykle/Dstykle.github.io" target="_blank">Web Development Project</a>is my first project I created in college with the help of peers and my professor who was great help in setting up
-            new features that I have never used before and links to resources that I was unaware of at the time. This project helped me realize there are
-            many things out there available to help 
-          </figcaption>
-        </figure>
-      </div>
+          <figure>
+            <a href="https://github.com/Dstykle/Dstykle.github.io" target="_blank"><img class="project-pic"
+                src="images/Screenshot 2025-06-11 at 2.15.20 PM.png" alt="Front view of my web development website"
+                width="400vh"></a>
+            <figcaption>
+              The<a href="https://github.com/Dstykle/Dstykle.github.io" target="_blank">Web Development Project</a>is my
+              first project I created in college
+              with the help of peers and my professor who was great help in setting up new features that I have never
+              used before and links to resources that
+              I was unaware of at the time. This project was to help me develop my HTML, CSS, and JS skills and improve
+              on how I can use these languages to
+              create better websites in the future.
+            </figcaption>
+          </figure>
+        </div>
       </section>
     </section>
     <!--Contact form for user interactivity-->
-    <!--mixing -->
     <section id="contact" class="flex-item">
       <h2>Contact Me</h2><br><br>
       <form>
         <p><label for="name">Name:</label>
-        <input id="name" type="text" placeholder="Pablo Gomez" required></p>
+          <input id="name" type="text" placeholder="Pablo Gomez" required>
+        </p>
         <p><label for="email">Email:</label>
-        <input id="email" type="email" placeholder="pgomez@r2hintern.org" required></p>
+          <input id="email" type="email" placeholder="pgomez@r2hintern.org" required>
+        </p>
         <label for="message">
           <p style="height: 1.3em;">Message:</p>
         </label>
         <div>
-          <textarea id="message" rows="7" placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo."></textarea>
+          <textarea id="message" rows="7"
+            placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo."></textarea>
         </div>
         <input type="submit">
       </form>
     </section>
   </main>
   <footer>
-    <p>designed by <a href="#">Gomez Designs</a>, <a href="https://www.freecodecamp.org/certification/PabloGomez/responsive-web-design" target="_blank">Certified in Responsive Web Design</a> ©2025</p>
+    <p>designed by <a href="#">Gomez Designs</a>, <a
+        href="https://www.freecodecamp.org/certification/PabloGomez/responsive-web-design" target="_blank">Certified in
+        Responsive Web Design</a> ©2025</p>
     <nav id="socials">
-    <ul>
-      <li><a href="#" class="fa fa-facebook"></a> |</li>
-      <li><a href="#" class="fa fa-instagram"></a> |</li>
-      <li><a href="https://www.linkedin.com/in/pablogomeztech/" class="fa fa-linkedin" target="_blank"></a> |</li>
-      <li><a href="https://github.com/Dstykle" class="fa fa-github" target="_blank"></a> </li>
-    </ul>
+      <ul>
+        <li><a href="#" class="fa fa-facebook"></a> |</li>
+        <li><a href="#" class="fa fa-instagram"></a> |</li>
+        <li><a href="https://www.linkedin.com/in/pablogomeztech/" class="fa fa-linkedin" target="_blank"></a> |</li>
+        <li><a href="https://github.com/Dstykle" class="fa fa-github" target="_blank"></a> </li>
+      </ul>
     </nav>
+    <script src="burgerBar.js"></script>
   </footer>
 </body>
+
 </html>
